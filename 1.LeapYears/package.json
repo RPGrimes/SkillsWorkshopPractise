@@ -1,0 +1,14 @@
+{
+  "name": "1.leapyears",
+  "version": "1.0.0",
+  "description": "",
+  "main": "leapYears.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
