@@ -1,5 +1,5 @@
 const middleLetter = (word) => {
-  return typeof word === 'string'
+  return word
 };
 
 module.exports = middleLetter;
