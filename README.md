@@ -33,3 +33,21 @@ getMiddle("middle") # => "dd"
 getMiddle("A") # => "A"
 getMiddle("of") # => "of"
 ```
+
+## 3. Ten Minute Walk
+
+Create a function that will return true if the walk will take you exactly ten minutes and will return you to your starting point.
+
+Requirements
+You are meeting a friend in New York City, where all roads are laid out in a perfect grid. You arrived ten minutes too early to the appointment, so you decided to take the opportunity to go for a short walk.
+The city provides its tourists with a Walk Generating App on their phones -- every time you press the button it sends you an array of one-letter strings representing directions to walk. e.g. ['n', 's', 'w', 'e']
+
+You always walk one block at a time in a direction and you know it takes you one minute to traverse one city block, so create a function that will return true if the walk the app gives you will take you exactly ten minutes (you don't want to be early or late!) and will, of course, return you to your starting point. Return false otherwise.
+
+### Acceptance Criteria
+```
+tenMinuteWalk(['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w']) => true
+tenMinuteWalk(['w', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w']) => false
+tenMinuteWalk(['w', 's', 'e', 's', 's', 'e', 's', 'w', 'n', 'n']) => false
+tenMinuteWalk(['w', 's']) => false
+```
