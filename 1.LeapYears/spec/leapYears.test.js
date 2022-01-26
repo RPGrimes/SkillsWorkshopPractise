@@ -1,5 +1,5 @@
 const leapYear = require('../src/leapYears');
 
-test('returns the number entered', () => {
-  expect(leapYear(1234)).toBe(1234)
+test('returns true when a year divisible be 400 is entered', () => {
+  expect(leapYear(1600)).toBe(true)
 })
