@@ -1,7 +1,7 @@
 const middleLetter = (word) => {
   wordLength = word.length
-  num = Math.floor(wordLength / 2)
   if(wordLength % 2 !== 0){
+    num = Math.floor(wordLength / 2)
     arr = word.split('')
     for(i = 0; i < num; i++) {
       arr.shift();
@@ -9,10 +9,14 @@ const middleLetter = (word) => {
     }
     return arr.join()
   } else {
-
+    num = Math.floor(wordLength / 2) - 1
+    arr = word.split('')
+    for(i = 0; i < num; i++) {
+      arr.shift();
+      arr.pop();
+    }
+    return arr.join('')
   }
 };
-
-console.log(middleLetter('three'))
 
 module.exports = middleLetter;
