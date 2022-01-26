@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^27.4.7"
+    "jest": "^27.4.7",
+    "prettier": "2.5.1"
   },
   "dependencies": {
     "node": "^17.4.0"
