@@ -13,14 +13,9 @@ A simple tool that will tell you whether a year is a leap year, according to the
 ### Acceptance Criteria
 
 ```
-leap_year?(2000)
- => true
-> leap_year?(1970)
- => false
-leap_year?(1900)
- => false
-leap_year?(1988)
- => true
-leap_year?(1500)
- => false
+> leapYear(2000) => true
+> leapYear(1970) => false
+> leapYear(1900) => false
+> leapYear(1988) => true
+> leapYear(1500) => false
 ```
