@@ -16,12 +16,16 @@ const tenMinuteWalk = (arr) => {
     }
   })
 
+  return returnResult(nCount, sCount, eCount, wCount);
+};
+
+const returnResult = (nCount, sCount, eCount, wCount) => {
   if(nCount === sCount && eCount === wCount){
     return true
   } else {
     return false
   }
-};
+}
 
 module.exports = tenMinuteWalk;
 
