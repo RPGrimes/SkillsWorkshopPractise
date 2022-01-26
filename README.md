@@ -19,3 +19,17 @@ A simple tool that will tell you whether a year is a leap year, according to the
 > leapYear(1988) => true
 > leapYear(1500) => false
 ```
+
+## 2. Get the Middle Letter(s)
+
+Your job is to return the middle letter of a word. If the word's length is odd, return the middle letter. If the word's length is even, return the middle 2 letters.
+
+### Acceptance Criteria
+
+```
+getMiddle("test") # => "es"
+getMiddle("testing") # => "t"
+getMiddle("middle") # => "dd"
+getMiddle("A") # => "A"
+getMiddle("of") # => "of"
+```
