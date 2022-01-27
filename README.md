@@ -124,4 +124,15 @@ Given a number in pounds and pence, work out the most efficient way of breaking 
 changeConverter(6.32) => ['£5', '£1', '20p', '10p', '2p']
 ```
 
+## 7. Echo Chamber
+An app that repeats what you say until you exit it!
+
+```
+Say something:
+hello, world
+2018-01-09 | 16:26 | You said: 'hello, world'!
+Say something:
+exit
+Goodbye!
+```
 
