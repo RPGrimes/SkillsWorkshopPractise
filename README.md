@@ -108,3 +108,20 @@ The price table and offers:
 Notes:
  - For any illegal input (non capitals) simply return -1
 
+ ### Acceptance Criteria
+```
+checkout('ADC') => 85
+checkout('AAABB') => 185
+checkout('AaA') => -1
+```
+
+ ## 6. Change Converter
+
+Given a number in pounds and pence, work out the most efficient way of breaking it down into notes and coins, e.g. 11.55 becomes ["£10", "£1", "50p", "5p"]
+
+ ### Acceptance Criteria
+```
+changeConverter(6.32) => ['£5', '£1', '20p', '10p', '2p']
+```
+
+
