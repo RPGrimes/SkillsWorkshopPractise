@@ -1,49 +1,53 @@
 const changeConverter = (value) => {
-  let money = value;
   let arr = [];
+  let money = value;
 
-  while(money > 0){
-    if(money / 50 >= 1){
-      arr.push('£50')
-      money -= 50
-    } else if(money / 20 >= 1){
-      arr.push('£20')
-      money -= 20
-    } else if(money / 10 >= 1){
-      arr.push('£10')
-      money -= 10
-    } else if(money / 5 >= 1){
-      arr.push('£5')
-      money -= 5
-    } else if(money / 2 >= 1){
-      arr.push('£2')
-      money -= 2
-    } else if(money / 1 >= 1){
-      arr.push('£1')
-      money -= 1
-    } else if(money / 0.5 >= 1){
-      arr.push('50p')
-      money -= 0.5
-    } else if(money / 0.2 >= 1){
-      arr.push('20p')
-      money -= 0.2
-    } else if(money / 0.1 >= 1){
-      arr.push('10p')
-      money -= 0.1
-    } else if(money / 0.05 >= 1){
-      arr.push('5p')
-      money -= 0.05
-    } else if(money / 0.02 >= 1){
-      arr.push('2p')
-      money -= 0.02
-    } else if(money / 0.01 >= 1){
-      arr.push('1p')
-      money -= 0.01
-    } else {
-      break
+while(money >= 0.01){
+  let change = findHighestChange(money);
+  let index = findHighestChangeIndex(money);
+  money -= change
+  note = findChangeAmount(index);
+  arr.push(findChangeAmount(index));
+  };
+  return arr;
+};
+
+const findHighestChangeIndex = (amount) => {
+  values = [50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01];
+  let array = [];
+  values.map(value => {  
+      if(value > amount){
+        array.push('false');
+        
+      } else {
+        array.push('true');
+      }
     }
-  }
-  return arr
+  )
+  let index = array.indexOf('true');
+  return index
+};
+
+const findHighestChange = (amount) => {
+  values = [50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01];
+  let array = [];
+  values.map(value => {  
+      if(value > amount){
+        array.push('false');
+        
+      } else {
+        array.push('true');
+      }
+    }
+  )
+  let index = array.indexOf('true');
+  return values[index]
+};
+
+const findChangeAmount = (index) => {
+  currency = ['£50', '£20', '£10', '£5', '£2', '£1', '50p', '20p', '10p', '5p', '2p', '1p'];
+  let change = currency[index];
+  return change;
 };
 
 module.exports = changeConverter;
