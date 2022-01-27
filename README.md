@@ -70,7 +70,10 @@ You'll need these:
 | J, X                          |     8  |
 | Q, Z                          |     10 |
 
-Examples
+### Acceptance Criteria
+```
+scrabbleScore(github) => 12
+```
 "github" should be scored as worth 12 points:
 
 - 2 points for G
