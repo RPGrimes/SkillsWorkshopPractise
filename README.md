@@ -128,11 +128,9 @@ changeConverter(6.32) => ['£5', '£1', '20p', '10p', '2p']
 An app that repeats what you say until you exit it!
 
 ```
-Say something:
-hello, world
-2018-01-09 | 16:26 | You said: 'hello, world'!
-Say something:
-exit
-Goodbye!
+'Enter your input > Hello!'
+> Hello!
+'Enter your input > Exit'
+> Goodbye!
 ```
 
