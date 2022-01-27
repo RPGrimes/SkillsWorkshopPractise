@@ -12,7 +12,7 @@ const scrabbleScorer = (word) => {
 
   let score = 0
 
-  for(i = 0; i < word.length; i++){
+  for(i = 0; i < word.toLowerCase().length; i++){
     score += letterValue[word[i]]
   }
   return score

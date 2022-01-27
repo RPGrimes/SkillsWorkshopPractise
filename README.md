@@ -88,3 +88,23 @@ And to total:
 2 + 1 + 1 + 4 + 1 + 3
 
 = 12
+
+## 5. Checkout
+
+The purpose of this challenge is to implement a supermarket checkout that calculates the total price of a number of items.
+
+The price table and offers:
+```
++------+-------+----------------+
+| Item | Price | Special offers |
++------+-------+----------------+
+| A    | 50    | 3A for 130     |
+| B    | 30    | 2B for 45      |
+| C    | 20    |                |
+| D    | 15    |                |
++------+-------+----------------+
+```
+
+Notes:
+ - For any illegal input (non capitals) simply return -1
+
