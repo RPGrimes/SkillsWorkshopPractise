@@ -11,3 +11,7 @@ test('checkout tallies the total cost including discount if applicable', () => {
   expect(checkout("BB")).toBe(45)
   expect(checkout("ABABAD")).toBe(190)
 })
+
+test('for any illegal inputs return -1', () => {
+  expect(checkout("AaA")).toBe(-1)
+})
