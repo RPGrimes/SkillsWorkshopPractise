@@ -51,3 +51,37 @@ tenMinuteWalk(['w', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w']) => false
 tenMinuteWalk(['w', 's', 'e', 's', 's', 'e', 's', 'w', 'n', 'n']) => false
 tenMinuteWalk(['w', 's']) => false
 ```
+
+## 4. Scrabble Scorer
+
+Given a word, compute the scrabble score for that word.
+
+##### Letter Values
+
+You'll need these:
+
+| Letter                        | Value  |
+| ----                          |  ----  |
+| A, E, I, O, U, L, N, R, S, T  |     1  |
+| D, G                          |     2  |
+| B, C, M, P                    |     3  |
+| F, H, V, W, Y                 |     4  |
+| K                             |     5  |
+| J, X                          |     8  |
+| Q, Z                          |     10 |
+
+Examples
+"github" should be scored as worth 12 points:
+
+- 2 points for G
+- 1 point for I
+- 1 point for T
+- 4 points for H
+- 1 point for U
+- 3 points for B
+
+And to total:
+
+2 + 1 + 1 + 4 + 1 + 3
+
+= 12
